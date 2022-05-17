@@ -19,7 +19,7 @@ Nowadays there are countless well-made resources on how to learn blockchain deve
 
 This guide will focus on the Ethereum ecosystem as that's where most developers and applications are. If you are interested in other ecosystems that are non-EVM compatible and are not L2s on Ethereum, then check out their respective documentation or guides written by their developer communities. Examples of other non-EVM compatible blockchains that are popular are Solana (Rust/Anchor), Polkadot (Rust/Substrate), Cosmos, Terra, and others. Most of these blockchains do or will support the EVM stack through various initiatives like Neon EVM (Solana), Moonbeam/Moonriver (Polkadot/Kusama), EVMOS (Cosmos), etc.
 
-I really want this guide to become a community-sourced public good that everyone will be able to take advantage of. I will do my best to present it to the wider blockchain developer community to get constructive feedback, proofreading help, and insight into how to make it the best available guide available. 
+I really want this guide to become a community-sourced public good that everyone will be able to take advantage of. I will do my best to present it to the wider blockchain developer community to get constructive feedback, proofreading help, and insight into how to make it the best available guide. 
 
 ### What is blockchain development?
 
@@ -127,10 +127,10 @@ In order to learn the basics of Ethereum, go through the [ethereum.org documenta
 - [Web2 vs. Web3](https://ethereum.org/en/developers/docs/web2-vs-web3/)
 - [Accounts](https://ethereum.org/en/developers/docs/accounts/)
 - [Transactions](https://ethereum.org/en/developers/docs/transactions/)
-- [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/blocks/)
-- [Gas](https://ethereum.org/en/developers/docs/evm/) (skip the Opcodes section, we'll revisit that later)
-- [Nodes and clients](https://ethereum.org/en/developers/docs/gas/)
-- [Networks](https://ethereum.org/en/developers/docs/nodes-and-clients/)
+- [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/) (skip the Opcodes section, we'll revisit that later)
+- [Gas and fees](https://ethereum.org/en/developers/docs/gas) 
+- [Nodes and clients](https://ethereum.org/en/developers/docs/nodes-and-clients/)
+- [Networks](https://ethereum.org/en/developers/docs/networks/)
 - [Consensus mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
 - [Governance / EIP process](https://ethereum.org/en/governance/)
 - **Ethereum roadmap - Endgame**
@@ -183,7 +183,7 @@ In the beginning, you declare the version of Solidity you are using the `pragma 
 
 **How do I compile and deploy my first contract?**
 
-In order to compile and deploy our first smart contract, we will use the Remix IDE which is a website where we can write smart contracts, compile them and deploy them on a local instance of the EVM. We can also interact with the local deployed smart contract to test out its functionality. To deploy our simple counter contract, go to [Remix](https://remix.ethereum.org/), add a new file in the contracts directory, name it `Counter.sol`, and copy-paste the code in the [counter example](https://solidity-by-example.org/first-app/). Now click on the second icon from the top in the selection bar on the left, it is the logo of the Solidity programming language and it symbolizes the Solidity compiler in Remix. In the compiler dropdown select 0.8.10 which is the Solidity version in our smart contract and click "Compile Counter.sol". After you have compiled your contract click on the third icon from the top, it should have the "Deploy & Run Transactions" name. Click "Deploy". After you have deployed, you should see a list item with "> COUNTER AT 0x.... (MEMORY). You've successfully compiled and deployed your first smart contract! Now that you have it deployed, you can interact with it by calling the `inc()` or `dec()` functions to increase or decrease the value of the `count` variable. You can call the `get()` function to retrieve the value of the `count` variable.
+In order to compile and deploy our first smart contract, we will use the Remix IDE which is a website where we can write smart contracts, compile them and deploy them on a local instance of the EVM. We can also interact with the local deployed smart contract to test out its functionality. To deploy our simple counter contract, go to [Remix](https://remix.ethereum.org/), add a new file in the contracts directory, name it `Counter.sol`, and copy-paste the code in the [counter example](https://solidity-by-example.org/first-app/). Now click on the second icon from the bottom in the selection bar on the left, it is the logo of the Solidity programming language and it symbolizes the Solidity compiler in Remix. In the compiler dropdown select 0.8.10 which is the Solidity version in our smart contract and click "Compile Counter.sol". After you have compiled your contract click on the third icon from the top, it should have the "Deploy & Run Transactions" name. Click "Deploy". After you have deployed, you should see a list item with "> COUNTER AT 0x.... (MEMORY). You've successfully compiled and deployed your first smart contract! Now that you have it deployed, you can interact with it by calling the `inc()` or `dec()` functions to increase or decrease the value of the `count` variable. You can call the `get()` function to retrieve the value of the `count` variable.
 
 ![remix](./images/remix.png)
 
